@@ -1,0 +1,21 @@
+.navBarBody {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(47, 6, 197, 0.808);
+}
+
+.navBarButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBarButtons Button{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+}
+
+.navBarImg{
+    margin: 5px;
+}
