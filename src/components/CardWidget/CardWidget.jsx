@@ -18,7 +18,7 @@ export const CardWidget = () => {
     return (
         <>
             <div className={styles.CardWidgetBody}>
-                <IconButton aria-label="cart">
+                <IconButton aria-label="cart" href="/cart">
                     <StyledBadge badgeContent={10} color="secondary">
                         <ShoppingCartIcon />
                     </StyledBadge>
