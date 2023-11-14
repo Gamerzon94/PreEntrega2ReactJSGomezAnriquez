@@ -10,12 +10,23 @@ export const NavBar = () => {
             <div className={styles.navBarBody}> 
                 <div className={styles.navBarButtons}>
                     <div className={styles.navBarImg}>
-                        <Link to={'/'}><img src="JC_Jenson_Logo.png" alt="JCJenson Logo" /></Link>
+                        <Link to={'/'}><img src="/JC_Jenson_Logo.png" alt="JCJenson Logo" /></Link>
                     </div>
-                    <Button variant="contained">Inicio</Button>
-                    <Button variant="contained">Articulos de Oficina</Button>
-                    <Button variant="contained">Articulos civiles</Button>
-                    <Button variant="contained">Worker Drones</Button>
+                    <Link to={"/"}>
+                        <Button variant="contained">Inicio</Button>
+                    </Link>
+                    <Link to={"/category/oficina"}>
+                        <Button variant="contained">Articulos de Oficina</Button>
+                    </Link>
+                    <Link to={"/category/transporte"}>
+                        <Button variant="contained">Servicios de Transporte</Button>
+                    </Link>
+                    <Link to={"/category/espacio"}>
+                        <Button variant="contained">Servicios Espaciales</Button>
+                    </Link>
+                    <Link to={"/category/dron"}>
+                        <Button variant="contained">Drones</Button>
+                    </Link>
                 </div>
                 <CardWidget/>
             </div>
